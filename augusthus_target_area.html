@@ -1,0 +1,1408 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d2d9aac9885c6533df64d7b346be6edc {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/npm/leaflet-ant-path@1.1.2/dist/leaflet-ant-path.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_d2d9aac9885c6533df64d7b346be6edc" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_d2d9aac9885c6533df64d7b346be6edc = L.map(
+                "map_d2d9aac9885c6533df64d7b346be6edc",
+                {
+                    center: [55.6562264, 12.591784],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 14,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_3166f2da00b6c17e79e92162484e5e23 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_3166f2da00b6c17e79e92162484e5e23.addTo(map_d2d9aac9885c6533df64d7b346be6edc);
+        
+    
+            var circle_240a82571c2473bb863e1ba048b5357c = L.circle(
+                [55.666865275, 12.558545924999999],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6000, "stroke": true, "weight": 3}
+            ).addTo(map_d2d9aac9885c6533df64d7b346be6edc);
+        
+    
+        var popup_f5c4640ad07f079ffd316b05c2a6b2ca = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4de30f07b09a6d460616bc7b710f90b7 = $(`<div id="html_4de30f07b09a6d460616bc7b710f90b7" style="width: 100.0%; height: 100.0%;">Target zone to include most companies within a (6000.00 meters radius)</div>`)[0];
+                popup_f5c4640ad07f079ffd316b05c2a6b2ca.setContent(html_4de30f07b09a6d460616bc7b710f90b7);
+            
+        
+
+        circle_240a82571c2473bb863e1ba048b5357c.bindPopup(popup_f5c4640ad07f079ffd316b05c2a6b2ca)
+        ;
+
+        
+    
+    
+            var marker_411c4f51bc2374a208a14052ce6228fb = L.marker(
+                [55.666653, 12.559371],
+                {}
+            ).addTo(map_d2d9aac9885c6533df64d7b346be6edc);
+        
+    
+            var icon_597343203ed571384f94780e78f4bcd2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_411c4f51bc2374a208a14052ce6228fb.setIcon(icon_597343203ed571384f94780e78f4bcd2);
+        
+    
+        var popup_ae5c16e9b0e6779136b46e448bb43901 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5826afc3c61636c55cee8c9d35218718 = $(`<div id="html_5826afc3c61636c55cee8c9d35218718" style="width: 100.0%; height: 100.0%;"><b>From:</b> C/O Vismo ApS, Flæsketorvet 68, 1., 1711 København V, 1711 Flæsketorvet<br><b>Company:</b> Vismo Holding ApS<br><b>Date:</b> 02.08.2021</div>`)[0];
+                popup_ae5c16e9b0e6779136b46e448bb43901.setContent(html_5826afc3c61636c55cee8c9d35218718);
+            
+        
+
+        marker_411c4f51bc2374a208a14052ce6228fb.bindPopup(popup_ae5c16e9b0e6779136b46e448bb43901)
+        ;
+
+        
+    
+    
+            ant_path_6f2a07362605aa44a21226248d86cba6 = L.polyline.antPath(
+              [[55.666653, 12.559371], [55.6560928, 12.5918041]],
+              {"bubblingMouseEvents": true, "color": "black", "dashArray": [10, 20], "dashOffset": null, "delay": 1000, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "hardwareAcceleration": false, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "paused": false, "pulseColor": "#FFFFFF", "reverse": false, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+        ).addTo(map_d2d9aac9885c6533df64d7b346be6edc);
+        
+    
+            var marker_53427782431ff6baf3aca4b9e2742a21 = L.marker(
+                [55.6636289, 12.5926977],
+                {}
+            ).addTo(map_d2d9aac9885c6533df64d7b346be6edc);
+        
+    
+            var icon_d816ef41e24e0c045bcaadba1cb70e30 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_53427782431ff6baf3aca4b9e2742a21.setIcon(icon_d816ef41e24e0c045bcaadba1cb70e30);
+        
+    
+        var popup_0419fc37b5c672fc83af94d94c13bd5f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_376811c3251562e35ecdfc7f5506a2e7 = $(`<div id="html_376811c3251562e35ecdfc7f5506a2e7" style="width: 100.0%; height: 100.0%;"><b>From:</b> C/O Jasper Vestorp Bos, Njalsgade 195, 2. 17, 2300 København S<br><b>Company:</b> NORDPAR ApS<br><b>Date:</b> 27.08.2024</div>`)[0];
+                popup_0419fc37b5c672fc83af94d94c13bd5f.setContent(html_376811c3251562e35ecdfc7f5506a2e7);
+            
+        
+
+        marker_53427782431ff6baf3aca4b9e2742a21.bindPopup(popup_0419fc37b5c672fc83af94d94c13bd5f)
+        ;
+
+        
+    
+    
+            ant_path_a63c399609efcadd2146365b9300ef2d = L.polyline.antPath(
+              [[55.6636289, 12.5926977], [55.65622639999999, 12.591784]],
+              {"bubblingMouseEvents": true, "color": "black", "dashArray": [10, 20], "dashOffset": null, "delay": 1000, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "hardwareAcceleration": false, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "paused": false, "pulseColor": "#FFFFFF", "reverse": false, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+        ).addTo(map_d2d9aac9885c6533df64d7b346be6edc);
+        
+    
+            var marker_afea20fb715b1783c3ac3fc4cfaa2922 = L.marker(
+                [55.6321835, 12.5818871],
+                {}
+            ).addTo(map_d2d9aac9885c6533df64d7b346be6edc);
+        
+    
+            var icon_f7ce02f730f7c58bf6e004d996bc57ce = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_afea20fb715b1783c3ac3fc4cfaa2922.setIcon(icon_f7ce02f730f7c58bf6e004d996bc57ce);
+        
+    
+        var popup_3617b032a2d41850fe555857f4d24e10 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_68ac2505fc175b052da4525ddf09d5f2 = $(`<div id="html_68ac2505fc175b052da4525ddf09d5f2" style="width: 100.0%; height: 100.0%;"><b>From:</b> Ørestads Boulevard 73, 2300 København S<br><b>Company:</b> Karo Pharma ApS<br><b>Date:</b> 03.05.2021</div>`)[0];
+                popup_3617b032a2d41850fe555857f4d24e10.setContent(html_68ac2505fc175b052da4525ddf09d5f2);
+            
+        
+
+        marker_afea20fb715b1783c3ac3fc4cfaa2922.bindPopup(popup_3617b032a2d41850fe555857f4d24e10)
+        ;
+
+        
+    
+    
+            ant_path_b4c86d6286af81fe0d61af8a55ef567c = L.polyline.antPath(
+              [[55.6321835, 12.5818871], [55.65622639999999, 12.591784]],
+              {"bubblingMouseEvents": true, "color": "black", "dashArray": [10, 20], "dashOffset": null, "delay": 1000, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "hardwareAcceleration": false, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "paused": false, "pulseColor": "#FFFFFF", "reverse": false, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+        ).addTo(map_d2d9aac9885c6533df64d7b346be6edc);
+        
+    
+            var marker_23b2b776454e0776f4d9f0618cc0bba5 = L.marker(
+                [55.6759687, 12.5672519],
+                {}
+            ).addTo(map_d2d9aac9885c6533df64d7b346be6edc);
+        
+    
+            var icon_6a993aeece635c4200c13528c6ed0dfa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_23b2b776454e0776f4d9f0618cc0bba5.setIcon(icon_6a993aeece635c4200c13528c6ed0dfa);
+        
+    
+        var popup_12ea65d8a98235d4ac676f1d459cbc67 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a2540f85bf1b834e566771ff0ea295ac = $(`<div id="html_a2540f85bf1b834e566771ff0ea295ac" style="width: 100.0%; height: 100.0%;"><b>From:</b> Rådhuspladsen 16, 1550 København V, 1550 Rådhuspladsen<br><b>Company:</b> AdNudging.com ApS<br><b>Date:</b> 31.05.2022</div>`)[0];
+                popup_12ea65d8a98235d4ac676f1d459cbc67.setContent(html_a2540f85bf1b834e566771ff0ea295ac);
+            
+        
+
+        marker_23b2b776454e0776f4d9f0618cc0bba5.bindPopup(popup_12ea65d8a98235d4ac676f1d459cbc67)
+        ;
+
+        
+    
+    
+            ant_path_2c6297b417cc2be36272b05c84b53819 = L.polyline.antPath(
+              [[55.6759687, 12.5672519], [55.65622639999999, 12.591784]],
+              {"bubblingMouseEvents": true, "color": "black", "dashArray": [10, 20], "dashOffset": null, "delay": 1000, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "hardwareAcceleration": false, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "paused": false, "pulseColor": "#FFFFFF", "reverse": false, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+        ).addTo(map_d2d9aac9885c6533df64d7b346be6edc);
+        
+    
+            var marker_86a1eb29cc44a40d1e05795261ba33fe = L.marker(
+                [55.6759687, 12.5672519],
+                {}
+            ).addTo(map_d2d9aac9885c6533df64d7b346be6edc);
+        
+    
+            var icon_26c411b4f9ada20df6f3af0c58639060 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_86a1eb29cc44a40d1e05795261ba33fe.setIcon(icon_26c411b4f9ada20df6f3af0c58639060);
+        
+    
+        var popup_8e9260dea2a7807a87ecb3a311fd1620 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dbe9cf20f35d2d393af72d108a1071be = $(`<div id="html_dbe9cf20f35d2d393af72d108a1071be" style="width: 100.0%; height: 100.0%;"><b>From:</b> C/O AdNudging.com ApS, Rådhuspladsen 16, 1550 København V, 1550 Rådhuspladsen<br><b>Company:</b> Andreas Randløv Holding ApS<br><b>Date:</b> 31.05.2022</div>`)[0];
+                popup_8e9260dea2a7807a87ecb3a311fd1620.setContent(html_dbe9cf20f35d2d393af72d108a1071be);
+            
+        
+
+        marker_86a1eb29cc44a40d1e05795261ba33fe.bindPopup(popup_8e9260dea2a7807a87ecb3a311fd1620)
+        ;
+
+        
+    
+    
+            ant_path_df20d6c5a78f9ce76a0335890c0b2a06 = L.polyline.antPath(
+              [[55.6759687, 12.5672519], [55.6560613, 12.5919632]],
+              {"bubblingMouseEvents": true, "color": "black", "dashArray": [10, 20], "dashOffset": null, "delay": 1000, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "hardwareAcceleration": false, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "paused": false, "pulseColor": "#FFFFFF", "reverse": false, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+        ).addTo(map_d2d9aac9885c6533df64d7b346be6edc);
+        
+    
+            var marker_cbc2d5d76d15924c1a684cfb24a88a6d = L.marker(
+                [55.7265944, 12.5775111],
+                {}
+            ).addTo(map_d2d9aac9885c6533df64d7b346be6edc);
+        
+    
+            var icon_111c91bcb4246ca33a6e99e5e33a6b9d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_cbc2d5d76d15924c1a684cfb24a88a6d.setIcon(icon_111c91bcb4246ca33a6e99e5e33a6b9d);
+        
+    
+        var popup_29a3aad760678faee3d50ed21899a7e6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_170de2107c7e402019b165946f157deb = $(`<div id="html_170de2107c7e402019b165946f157deb" style="width: 100.0%; height: 100.0%;"><b>From:</b> C/O Synch Advokatpartnerselskab, Strandvejen 58, 1., 2900 Hellerup<br><b>Company:</b> Kenzi Wealth Fondsmæglerselskab A/S<br><b>Date:</b> 26.06.2024</div>`)[0];
+                popup_29a3aad760678faee3d50ed21899a7e6.setContent(html_170de2107c7e402019b165946f157deb);
+            
+        
+
+        marker_cbc2d5d76d15924c1a684cfb24a88a6d.bindPopup(popup_29a3aad760678faee3d50ed21899a7e6)
+        ;
+
+        
+    
+    
+            ant_path_0d83575b16b2968cfd4042eb955d07b6 = L.polyline.antPath(
+              [[55.7265944, 12.5775111], [55.6560928, 12.5918041]],
+              {"bubblingMouseEvents": true, "color": "black", "dashArray": [10, 20], "dashOffset": null, "delay": 1000, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "hardwareAcceleration": false, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "paused": false, "pulseColor": "#FFFFFF", "reverse": false, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+        ).addTo(map_d2d9aac9885c6533df64d7b346be6edc);
+        
+    
+            var marker_1964967b8b38c579f3e39a075fb3d1d9 = L.marker(
+                [55.6998963, 12.5329415],
+                {}
+            ).addTo(map_d2d9aac9885c6533df64d7b346be6edc);
+        
+    
+            var icon_a5df2c318cdf63825540b87a5f436e2d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1964967b8b38c579f3e39a075fb3d1d9.setIcon(icon_a5df2c318cdf63825540b87a5f436e2d);
+        
+    
+        var popup_12753362e78255665bb2c7f678306100 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3c93e2c3aab74ceb5289520130d8812e = $(`<div id="html_3c93e2c3aab74ceb5289520130d8812e" style="width: 100.0%; height: 100.0%;"><b>From:</b> Hejrevej 28, 2400 København NV<br><b>Company:</b> M.O.M. HOLDING ApS<br><b>Date:</b> 16.03.2023</div>`)[0];
+                popup_12753362e78255665bb2c7f678306100.setContent(html_3c93e2c3aab74ceb5289520130d8812e);
+            
+        
+
+        marker_1964967b8b38c579f3e39a075fb3d1d9.bindPopup(popup_12753362e78255665bb2c7f678306100)
+        ;
+
+        
+    
+    
+            ant_path_c71b9676d26de793c0e56a75b2d90da5 = L.polyline.antPath(
+              [[55.6998963, 12.5329415], [55.6560613, 12.5919632]],
+              {"bubblingMouseEvents": true, "color": "black", "dashArray": [10, 20], "dashOffset": null, "delay": 1000, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "hardwareAcceleration": false, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "paused": false, "pulseColor": "#FFFFFF", "reverse": false, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+        ).addTo(map_d2d9aac9885c6533df64d7b346be6edc);
+        
+    
+            var marker_f0decbfb0f1fb1e76542074fe919282b = L.marker(
+                [55.633397, 12.582086],
+                {}
+            ).addTo(map_d2d9aac9885c6533df64d7b346be6edc);
+        
+    
+            var icon_8cf14eb0ab4fe2d6db89f07361f71cfa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f0decbfb0f1fb1e76542074fe919282b.setIcon(icon_8cf14eb0ab4fe2d6db89f07361f71cfa);
+        
+    
+        var popup_c5faa8d231ce8c4c277434d5457ffa57 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_62570c8b17d3aa1c34ef0743276c314f = $(`<div id="html_62570c8b17d3aa1c34ef0743276c314f" style="width: 100.0%; height: 100.0%;"><b>From:</b> Ørestads Boulevard 61F, 3. th, 2300 København S<br><b>Company:</b> DIAKRIT DANMARK ApS<br><b>Date:</b> 29.10.2021</div>`)[0];
+                popup_c5faa8d231ce8c4c277434d5457ffa57.setContent(html_62570c8b17d3aa1c34ef0743276c314f);
+            
+        
+
+        marker_f0decbfb0f1fb1e76542074fe919282b.bindPopup(popup_c5faa8d231ce8c4c277434d5457ffa57)
+        ;
+
+        
+    
+    
+            ant_path_96b2b2544c775875f3105c08b2acfa00 = L.polyline.antPath(
+              [[55.633397, 12.582086], [55.6560928, 12.5918041]],
+              {"bubblingMouseEvents": true, "color": "black", "dashArray": [10, 20], "dashOffset": null, "delay": 1000, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "hardwareAcceleration": false, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "paused": false, "pulseColor": "#FFFFFF", "reverse": false, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+        ).addTo(map_d2d9aac9885c6533df64d7b346be6edc);
+        
+    
+            var marker_949f9ea0fdb4c8c0363bd9b03eccd76c = L.marker(
+                [55.7287677, 12.5768559],
+                {}
+            ).addTo(map_d2d9aac9885c6533df64d7b346be6edc);
+        
+    
+            var icon_291e9c691cd55fa68e173fc8b98b1caf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_949f9ea0fdb4c8c0363bd9b03eccd76c.setIcon(icon_291e9c691cd55fa68e173fc8b98b1caf);
+        
+    
+        var popup_6a0e974c5fe004d84e98319ab5909e49 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d7a11abd116c5934a9626f9ce74f20ee = $(`<div id="html_d7a11abd116c5934a9626f9ce74f20ee" style="width: 100.0%; height: 100.0%;"><b>From:</b> Strandvejen 70, 2., 2900 Hellerup<br><b>Company:</b> NORDCLOUD ApS<br><b>Date:</b> 05.07.2021</div>`)[0];
+                popup_6a0e974c5fe004d84e98319ab5909e49.setContent(html_d7a11abd116c5934a9626f9ce74f20ee);
+            
+        
+
+        marker_949f9ea0fdb4c8c0363bd9b03eccd76c.bindPopup(popup_6a0e974c5fe004d84e98319ab5909e49)
+        ;
+
+        
+    
+    
+            ant_path_5da8b3acce75715eef524e752b54da76 = L.polyline.antPath(
+              [[55.7287677, 12.5768559], [55.65622639999999, 12.591784]],
+              {"bubblingMouseEvents": true, "color": "black", "dashArray": [10, 20], "dashOffset": null, "delay": 1000, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "hardwareAcceleration": false, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "paused": false, "pulseColor": "#FFFFFF", "reverse": false, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+        ).addTo(map_d2d9aac9885c6533df64d7b346be6edc);
+        
+    
+            var marker_5a3eb688c4f0c5676ab66550848eb906 = L.marker(
+                [55.67286859999999, 12.5785895],
+                {}
+            ).addTo(map_d2d9aac9885c6533df64d7b346be6edc);
+        
+    
+            var icon_64fc30e466aaa1a74951d483f894e781 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5a3eb688c4f0c5676ab66550848eb906.setIcon(icon_64fc30e466aaa1a74951d483f894e781);
+        
+    
+        var popup_fb796fddb4f014ac5f65854522f53c27 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_59082b455770c69676b1d3b3506514f5 = $(`<div id="html_59082b455770c69676b1d3b3506514f5" style="width: 100.0%; height: 100.0%;"><b>From:</b> Frederiksholms Kanal 30, 1220 København K, 1220 Frederiksholms Kanal<br><b>Company:</b> UbiqiSense ApS<br><b>Date:</b> 13.11.2023</div>`)[0];
+                popup_fb796fddb4f014ac5f65854522f53c27.setContent(html_59082b455770c69676b1d3b3506514f5);
+            
+        
+
+        marker_5a3eb688c4f0c5676ab66550848eb906.bindPopup(popup_fb796fddb4f014ac5f65854522f53c27)
+        ;
+
+        
+    
+    
+            ant_path_e939885eadf5d77cef1596de29596798 = L.polyline.antPath(
+              [[55.67286859999999, 12.5785895], [55.65622639999999, 12.591784]],
+              {"bubblingMouseEvents": true, "color": "black", "dashArray": [10, 20], "dashOffset": null, "delay": 1000, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "hardwareAcceleration": false, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "paused": false, "pulseColor": "#FFFFFF", "reverse": false, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+        ).addTo(map_d2d9aac9885c6533df64d7b346be6edc);
+        
+    
+            var marker_f634aba890af54205499df12dcdabee9 = L.marker(
+                [55.6675021, 12.5560707],
+                {}
+            ).addTo(map_d2d9aac9885c6533df64d7b346be6edc);
+        
+    
+            var icon_2cfd6897c1535baadadb69f2190ade99 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f634aba890af54205499df12dcdabee9.setIcon(icon_2cfd6897c1535baadadb69f2190ade99);
+        
+    
+        var popup_c37caeb874bb17dec98faf07e5c269a0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_66f68bb1fe9dcc257fe324de5b2ac33d = $(`<div id="html_66f68bb1fe9dcc257fe324de5b2ac33d" style="width: 100.0%; height: 100.0%;"><b>From:</b> Skelbækgade 2, 5. tv, 1717 København V, 1717 Skelbækgade<br><b>Company:</b> Kubb&co A/S<br><b>Date:</b> 27.08.2024</div>`)[0];
+                popup_c37caeb874bb17dec98faf07e5c269a0.setContent(html_66f68bb1fe9dcc257fe324de5b2ac33d);
+            
+        
+
+        marker_f634aba890af54205499df12dcdabee9.bindPopup(popup_c37caeb874bb17dec98faf07e5c269a0)
+        ;
+
+        
+    
+    
+            ant_path_83fd8b84b942ab11b8c810ecd3825a17 = L.polyline.antPath(
+              [[55.6675021, 12.5560707], [55.65622639999999, 12.591784]],
+              {"bubblingMouseEvents": true, "color": "black", "dashArray": [10, 20], "dashOffset": null, "delay": 1000, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "hardwareAcceleration": false, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "paused": false, "pulseColor": "#FFFFFF", "reverse": false, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+        ).addTo(map_d2d9aac9885c6533df64d7b346be6edc);
+        
+    
+            var marker_dd371775e87beff2b4da9f4b3248b636 = L.marker(
+                [55.7110768, 11.7059526],
+                {}
+            ).addTo(map_d2d9aac9885c6533df64d7b346be6edc);
+        
+    
+            var icon_aef512d0e1314b792c3832cd606af034 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_dd371775e87beff2b4da9f4b3248b636.setIcon(icon_aef512d0e1314b792c3832cd606af034);
+        
+    
+        var popup_241fbef66fc0ece3a9f2db1a5c9a0e75 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f7dc4e26f0723238c7db42910e5f58e2 = $(`<div id="html_f7dc4e26f0723238c7db42910e5f58e2" style="width: 100.0%; height: 100.0%;"><b>From:</b> Absalonsvej 27, 4300 Holbæk<br><b>Company:</b> With Advokater ApS<br><b>Date:</b> 28.10.2024</div>`)[0];
+                popup_241fbef66fc0ece3a9f2db1a5c9a0e75.setContent(html_f7dc4e26f0723238c7db42910e5f58e2);
+            
+        
+
+        marker_dd371775e87beff2b4da9f4b3248b636.bindPopup(popup_241fbef66fc0ece3a9f2db1a5c9a0e75)
+        ;
+
+        
+    
+    
+            ant_path_ce323502320d7f6b9fa9c308bb476cca = L.polyline.antPath(
+              [[55.7110768, 11.7059526], [55.65622639999999, 12.591784]],
+              {"bubblingMouseEvents": true, "color": "black", "dashArray": [10, 20], "dashOffset": null, "delay": 1000, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "hardwareAcceleration": false, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "paused": false, "pulseColor": "#FFFFFF", "reverse": false, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+        ).addTo(map_d2d9aac9885c6533df64d7b346be6edc);
+        
+    
+            var marker_ffd834a91a00ddc8c86f3526fc1f29fc = L.marker(
+                [55.6805607, 12.6036895],
+                {}
+            ).addTo(map_d2d9aac9885c6533df64d7b346be6edc);
+        
+    
+            var icon_081e453926a142ba5ceab39178f072fa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ffd834a91a00ddc8c86f3526fc1f29fc.setIcon(icon_081e453926a142ba5ceab39178f072fa);
+        
+    
+        var popup_b7a9fb779e1876dd9c8344238c5b8e71 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a368f94cd89c14dcb0fbcbb9321fa4a1 = $(`<div id="html_a368f94cd89c14dcb0fbcbb9321fa4a1" style="width: 100.0%; height: 100.0%;"><b>From:</b> C/O Talent Garden Rainmaking, Danneskiold-Samsøes Allé 41, 1434 København K, 1434 Danneskiold-Samsøes Allé<br><b>Company:</b> Ardoq Denmark ApS<br><b>Date:</b> 04.01.2022</div>`)[0];
+                popup_b7a9fb779e1876dd9c8344238c5b8e71.setContent(html_a368f94cd89c14dcb0fbcbb9321fa4a1);
+            
+        
+
+        marker_ffd834a91a00ddc8c86f3526fc1f29fc.bindPopup(popup_b7a9fb779e1876dd9c8344238c5b8e71)
+        ;
+
+        
+    
+    
+            ant_path_1fee68eeec93e9856d1e91fecdbaa7b7 = L.polyline.antPath(
+              [[55.6805607, 12.6036895], [55.6560928, 12.5918041]],
+              {"bubblingMouseEvents": true, "color": "black", "dashArray": [10, 20], "dashOffset": null, "delay": 1000, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "hardwareAcceleration": false, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "paused": false, "pulseColor": "#FFFFFF", "reverse": false, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+        ).addTo(map_d2d9aac9885c6533df64d7b346be6edc);
+        
+    
+            var marker_8f69b351ffb4c2473c43bcc7d7f74b48 = L.marker(
+                [55.6779854, 12.5742545],
+                {}
+            ).addTo(map_d2d9aac9885c6533df64d7b346be6edc);
+        
+    
+            var icon_a28d8d1eed869a543be65fad083d44ea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8f69b351ffb4c2473c43bcc7d7f74b48.setIcon(icon_a28d8d1eed869a543be65fad083d44ea);
+        
+    
+        var popup_4e611e44ed192ed5b9e4078e8ee3974b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4cb8ad2851867bdf4502d99db8f2c53d = $(`<div id="html_4cb8ad2851867bdf4502d99db8f2c53d" style="width: 100.0%; height: 100.0%;"><b>From:</b> Knabrostræde 6, 3. th, 1210 København K, 1210 Knabrostræde<br><b>Company:</b> ENSURED ApS<br><b>Date:</b> 12.02.2024</div>`)[0];
+                popup_4e611e44ed192ed5b9e4078e8ee3974b.setContent(html_4cb8ad2851867bdf4502d99db8f2c53d);
+            
+        
+
+        marker_8f69b351ffb4c2473c43bcc7d7f74b48.bindPopup(popup_4e611e44ed192ed5b9e4078e8ee3974b)
+        ;
+
+        
+    
+    
+            ant_path_b8f1ac7b14f4e3ce3002041558bf4c1d = L.polyline.antPath(
+              [[55.6779854, 12.5742545], [55.65622639999999, 12.591784]],
+              {"bubblingMouseEvents": true, "color": "black", "dashArray": [10, 20], "dashOffset": null, "delay": 1000, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "hardwareAcceleration": false, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "paused": false, "pulseColor": "#FFFFFF", "reverse": false, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+        ).addTo(map_d2d9aac9885c6533df64d7b346be6edc);
+        
+    
+            var marker_b959b2500852682e17e2c2884e0392a2 = L.marker(
+                [55.7080336, 12.5933738],
+                {}
+            ).addTo(map_d2d9aac9885c6533df64d7b346be6edc);
+        
+    
+            var icon_4a5af9f4962fbb73238399df504f8c08 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b959b2500852682e17e2c2884e0392a2.setIcon(icon_4a5af9f4962fbb73238399df504f8c08);
+        
+    
+        var popup_48a8e8e0201324060dfadeab49d44fa6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e5cb1ea7ace480a2a6f789f9b6101a17 = $(`<div id="html_e5cb1ea7ace480a2a6f789f9b6101a17" style="width: 100.0%; height: 100.0%;"><b>From:</b> C/O Woods Office Ørestad ApS, Southamptongade 4, 2150 Nordhavn, 2150 null<br><b>Company:</b> Omegapoint Denmark ApS<br><b>Date:</b> 11.08.2022</div>`)[0];
+                popup_48a8e8e0201324060dfadeab49d44fa6.setContent(html_e5cb1ea7ace480a2a6f789f9b6101a17);
+            
+        
+
+        marker_b959b2500852682e17e2c2884e0392a2.bindPopup(popup_48a8e8e0201324060dfadeab49d44fa6)
+        ;
+
+        
+    
+    
+            ant_path_bb222e9d4fb6612404c81a0fef259be5 = L.polyline.antPath(
+              [[55.7080336, 12.5933738], [55.65622639999999, 12.591784]],
+              {"bubblingMouseEvents": true, "color": "black", "dashArray": [10, 20], "dashOffset": null, "delay": 1000, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "hardwareAcceleration": false, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "paused": false, "pulseColor": "#FFFFFF", "reverse": false, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+        ).addTo(map_d2d9aac9885c6533df64d7b346be6edc);
+        
+    
+            var marker_8e7eefefc47cf73a91384611b831170f = L.marker(
+                [55.6830081, 12.5723568],
+                {}
+            ).addTo(map_d2d9aac9885c6533df64d7b346be6edc);
+        
+    
+            var icon_08e1129ac753e32e00a453fe566c7f86 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8e7eefefc47cf73a91384611b831170f.setIcon(icon_08e1129ac753e32e00a453fe566c7f86);
+        
+    
+        var popup_043d17b70f007b29c3971e18553fe319 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cd30153e4a873348eb4d37d322cba8f4 = $(`<div id="html_cd30153e4a873348eb4d37d322cba8f4" style="width: 100.0%; height: 100.0%;"><b>From:</b> Nørre Voldgade 82, 2., 1358 København K, 1358 Nørre Voldgade<br><b>Company:</b> Hyphae Solutions ApS<br><b>Date:</b> 28.02.2024</div>`)[0];
+                popup_043d17b70f007b29c3971e18553fe319.setContent(html_cd30153e4a873348eb4d37d322cba8f4);
+            
+        
+
+        marker_8e7eefefc47cf73a91384611b831170f.bindPopup(popup_043d17b70f007b29c3971e18553fe319)
+        ;
+
+        
+    
+    
+            ant_path_89fa3ee99fd70ee37b378aeee20436ad = L.polyline.antPath(
+              [[55.6830081, 12.5723568], [55.65622639999999, 12.591784]],
+              {"bubblingMouseEvents": true, "color": "black", "dashArray": [10, 20], "dashOffset": null, "delay": 1000, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "hardwareAcceleration": false, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "paused": false, "pulseColor": "#FFFFFF", "reverse": false, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+        ).addTo(map_d2d9aac9885c6533df64d7b346be6edc);
+        
+    
+            var marker_937f16b2a00e4227551f9fa5ab80e152 = L.marker(
+                [55.6538611, 12.5099352],
+                {}
+            ).addTo(map_d2d9aac9885c6533df64d7b346be6edc);
+        
+    
+            var icon_0ed2b85487f860239e59cf4d3516f3fe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_937f16b2a00e4227551f9fa5ab80e152.setIcon(icon_0ed2b85487f860239e59cf4d3516f3fe);
+        
+    
+        var popup_e20baf948d6a4d31ca35b62ae3058a0b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_63407eef230ba588da1336012bfdd598 = $(`<div id="html_63407eef230ba588da1336012bfdd598" style="width: 100.0%; height: 100.0%;"><b>From:</b> Torveporten 2, 4., 2500 Valby<br><b>Company:</b> SILM FONDEN<br><b>Date:</b> 20.04.2021</div>`)[0];
+                popup_e20baf948d6a4d31ca35b62ae3058a0b.setContent(html_63407eef230ba588da1336012bfdd598);
+            
+        
+
+        marker_937f16b2a00e4227551f9fa5ab80e152.bindPopup(popup_e20baf948d6a4d31ca35b62ae3058a0b)
+        ;
+
+        
+    
+    
+            ant_path_03fd5b6a3e015ccb3d0596379c37ba3a = L.polyline.antPath(
+              [[55.6538611, 12.5099352], [55.65622639999999, 12.591784]],
+              {"bubblingMouseEvents": true, "color": "black", "dashArray": [10, 20], "dashOffset": null, "delay": 1000, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "hardwareAcceleration": false, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "paused": false, "pulseColor": "#FFFFFF", "reverse": false, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+        ).addTo(map_d2d9aac9885c6533df64d7b346be6edc);
+        
+    
+            var marker_12996b9af8d000b00508ed9f2fd98337 = L.marker(
+                [55.6821085, 12.5932296],
+                {}
+            ).addTo(map_d2d9aac9885c6533df64d7b346be6edc);
+        
+    
+            var icon_de2196013439f57d0801d0a86b45c247 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_12996b9af8d000b00508ed9f2fd98337.setIcon(icon_de2196013439f57d0801d0a86b45c247);
+        
+    
+        var popup_704df3831afc56d6b664a3636b52bd65 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3238daddc0ca4c352e0644f2a2384f83 = $(`<div id="html_3238daddc0ca4c352e0644f2a2384f83" style="width: 100.0%; height: 100.0%;"><b>From:</b> Toldbodgade 33, 1253 København K, 1253 Toldbodgade<br><b>Company:</b> ALLERGYCERTIFIED ApS<br><b>Date:</b> 10.01.2022</div>`)[0];
+                popup_704df3831afc56d6b664a3636b52bd65.setContent(html_3238daddc0ca4c352e0644f2a2384f83);
+            
+        
+
+        marker_12996b9af8d000b00508ed9f2fd98337.bindPopup(popup_704df3831afc56d6b664a3636b52bd65)
+        ;
+
+        
+    
+    
+            ant_path_d37c36dcac22870a8db221cd00d480b5 = L.polyline.antPath(
+              [[55.6821085, 12.5932296], [55.65622639999999, 12.591784]],
+              {"bubblingMouseEvents": true, "color": "black", "dashArray": [10, 20], "dashOffset": null, "delay": 1000, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "hardwareAcceleration": false, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "paused": false, "pulseColor": "#FFFFFF", "reverse": false, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+        ).addTo(map_d2d9aac9885c6533df64d7b346be6edc);
+        
+    
+            var marker_4767f4786849c98b990ba175e16a4b33 = L.marker(
+                [55.6638125, 12.6180551],
+                {}
+            ).addTo(map_d2d9aac9885c6533df64d7b346be6edc);
+        
+    
+            var icon_8083f8320a1af8fd531569af66b46a9f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4767f4786849c98b990ba175e16a4b33.setIcon(icon_8083f8320a1af8fd531569af66b46a9f);
+        
+    
+        var popup_4f6aa1e48210815bcd03cab2249f3af3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5bb00819b2694ef6bfecb7f0d5dff01a = $(`<div id="html_5bb00819b2694ef6bfecb7f0d5dff01a" style="width: 100.0%; height: 100.0%;"><b>From:</b> Bremensgade 79, st., 2300 København S<br><b>Company:</b> NORTHERN E-commerce ApS<br><b>Date:</b> 17.06.2022</div>`)[0];
+                popup_4f6aa1e48210815bcd03cab2249f3af3.setContent(html_5bb00819b2694ef6bfecb7f0d5dff01a);
+            
+        
+
+        marker_4767f4786849c98b990ba175e16a4b33.bindPopup(popup_4f6aa1e48210815bcd03cab2249f3af3)
+        ;
+
+        
+    
+    
+            ant_path_79ed61a93d562249c32d7d5edec22f82 = L.polyline.antPath(
+              [[55.6638125, 12.6180551], [55.65622639999999, 12.591784]],
+              {"bubblingMouseEvents": true, "color": "black", "dashArray": [10, 20], "dashOffset": null, "delay": 1000, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "hardwareAcceleration": false, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "paused": false, "pulseColor": "#FFFFFF", "reverse": false, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+        ).addTo(map_d2d9aac9885c6533df64d7b346be6edc);
+        
+    
+            var marker_4d0be9543796665deb6ac235df758166 = L.marker(
+                [55.6986326, 12.5561324],
+                {}
+            ).addTo(map_d2d9aac9885c6533df64d7b346be6edc);
+        
+    
+            var icon_cf209bc838b349f535eea03ce4ab59f7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4d0be9543796665deb6ac235df758166.setIcon(icon_cf209bc838b349f535eea03ce4ab59f7);
+        
+    
+        var popup_ae24ad42a3c0d4c1bdb384c1e0cc8d1a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d7bc8284c75524f8a3b92dcf762289a9 = $(`<div id="html_d7bc8284c75524f8a3b92dcf762289a9" style="width: 100.0%; height: 100.0%;"><b>From:</b> C/O Copenhagen Bio Science Park, Ole Maaløes Vej 3, 2200 København N<br><b>Company:</b> Daiichi Sankyo Nordics ApS<br><b>Date:</b> 24.03.2021</div>`)[0];
+                popup_ae24ad42a3c0d4c1bdb384c1e0cc8d1a.setContent(html_d7bc8284c75524f8a3b92dcf762289a9);
+            
+        
+
+        marker_4d0be9543796665deb6ac235df758166.bindPopup(popup_ae24ad42a3c0d4c1bdb384c1e0cc8d1a)
+        ;
+
+        
+    
+    
+            ant_path_f39b20976044ba720c98e787e7305a40 = L.polyline.antPath(
+              [[55.6986326, 12.5561324], [55.65622639999999, 12.591784]],
+              {"bubblingMouseEvents": true, "color": "black", "dashArray": [10, 20], "dashOffset": null, "delay": 1000, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "hardwareAcceleration": false, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "paused": false, "pulseColor": "#FFFFFF", "reverse": false, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+        ).addTo(map_d2d9aac9885c6533df64d7b346be6edc);
+        
+    
+            var marker_5de4999e3da4f3add17ed49495654249 = L.marker(
+                [55.3774548, 10.4128745],
+                {}
+            ).addTo(map_d2d9aac9885c6533df64d7b346be6edc);
+        
+    
+            var icon_6b43c83ce802724248f4acd1917166a6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5de4999e3da4f3add17ed49495654249.setIcon(icon_6b43c83ce802724248f4acd1917166a6);
+        
+    
+        var popup_9c4cde483993685cc322b4eced9b3740 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9f19e16d4b3d8d37e6de3fd18adb47d5 = $(`<div id="html_9f19e16d4b3d8d37e6de3fd18adb47d5" style="width: 100.0%; height: 100.0%;"><b>From:</b> Stærmosegårdsvej 8, 5230 Odense M<br><b>Company:</b> EDL ApS<br><b>Date:</b> 19.03.2022</div>`)[0];
+                popup_9c4cde483993685cc322b4eced9b3740.setContent(html_9f19e16d4b3d8d37e6de3fd18adb47d5);
+            
+        
+
+        marker_5de4999e3da4f3add17ed49495654249.bindPopup(popup_9c4cde483993685cc322b4eced9b3740)
+        ;
+
+        
+    
+    
+            ant_path_62337291df79e2a76ef3f10af160aea8 = L.polyline.antPath(
+              [[55.3774548, 10.4128745], [55.65622639999999, 12.591784]],
+              {"bubblingMouseEvents": true, "color": "black", "dashArray": [10, 20], "dashOffset": null, "delay": 1000, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "hardwareAcceleration": false, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "paused": false, "pulseColor": "#FFFFFF", "reverse": false, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+        ).addTo(map_d2d9aac9885c6533df64d7b346be6edc);
+        
+    
+            var marker_cc210edbc2aa0458482276f6db8a3972 = L.marker(
+                [55.677108, 12.569503],
+                {}
+            ).addTo(map_d2d9aac9885c6533df64d7b346be6edc);
+        
+    
+            var icon_f5ccc88021f68cb35f4e9d2c6cf2a252 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_cc210edbc2aa0458482276f6db8a3972.setIcon(icon_f5ccc88021f68cb35f4e9d2c6cf2a252);
+        
+    
+        var popup_771b09823b9763ff55192ddb932222d9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0df97f0f6e59c22e32499b9d879555b0 = $(`<div id="html_0df97f0f6e59c22e32499b9d879555b0" style="width: 100.0%; height: 100.0%;"><b>From:</b> Vestergade 29, 1456 København K, 1456 Vestergade<br><b>Company:</b> EyeReply ApS<br><b>Date:</b> 13.08.2021</div>`)[0];
+                popup_771b09823b9763ff55192ddb932222d9.setContent(html_0df97f0f6e59c22e32499b9d879555b0);
+            
+        
+
+        marker_cc210edbc2aa0458482276f6db8a3972.bindPopup(popup_771b09823b9763ff55192ddb932222d9)
+        ;
+
+        
+    
+    
+            ant_path_d080757b8ad664e02317f1b93ae66270 = L.polyline.antPath(
+              [[55.677108, 12.569503], [55.65622639999999, 12.591784]],
+              {"bubblingMouseEvents": true, "color": "black", "dashArray": [10, 20], "dashOffset": null, "delay": 1000, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "hardwareAcceleration": false, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "paused": false, "pulseColor": "#FFFFFF", "reverse": false, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+        ).addTo(map_d2d9aac9885c6533df64d7b346be6edc);
+        
+    
+            var marker_3e56b851097cc9a811a5d2afe809058e = L.marker(
+                [55.6678142, 12.6187678],
+                {}
+            ).addTo(map_d2d9aac9885c6533df64d7b346be6edc);
+        
+    
+            var icon_5748f72deb7612948030ab7ccb4770f2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3e56b851097cc9a811a5d2afe809058e.setIcon(icon_5748f72deb7612948030ab7ccb4770f2);
+        
+    
+        var popup_4060abde040fa8b7b0b39d1ae1eae9c7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_85007b129292fe9d6fd46b52eca2ba54 = $(`<div id="html_85007b129292fe9d6fd46b52eca2ba54" style="width: 100.0%; height: 100.0%;"><b>From:</b> Holmbladsgade 133, 2300 København S<br><b>Company:</b> ZeroNorth A/S<br><b>Date:</b> 01.09.2021</div>`)[0];
+                popup_4060abde040fa8b7b0b39d1ae1eae9c7.setContent(html_85007b129292fe9d6fd46b52eca2ba54);
+            
+        
+
+        marker_3e56b851097cc9a811a5d2afe809058e.bindPopup(popup_4060abde040fa8b7b0b39d1ae1eae9c7)
+        ;
+
+        
+    
+    
+            ant_path_f753003132fb60965f58cbbd3ec60ca1 = L.polyline.antPath(
+              [[55.6678142, 12.6187678], [55.65622639999999, 12.591784]],
+              {"bubblingMouseEvents": true, "color": "black", "dashArray": [10, 20], "dashOffset": null, "delay": 1000, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "hardwareAcceleration": false, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "paused": false, "pulseColor": "#FFFFFF", "reverse": false, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+        ).addTo(map_d2d9aac9885c6533df64d7b346be6edc);
+        
+    
+            var marker_a931ce1201fa32edf18bc71fe0cef241 = L.marker(
+                [55.6321835, 12.5818871],
+                {}
+            ).addTo(map_d2d9aac9885c6533df64d7b346be6edc);
+        
+    
+            var icon_3dc28e8035e02baa040debe441d9a3cf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a931ce1201fa32edf18bc71fe0cef241.setIcon(icon_3dc28e8035e02baa040debe441d9a3cf);
+        
+    
+        var popup_d6891e5527d21475170afcd7830816d1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1fcfe068a2cead37a3c34a5b667e09bf = $(`<div id="html_1fcfe068a2cead37a3c34a5b667e09bf" style="width: 100.0%; height: 100.0%;"><b>From:</b> Ørestads Boulevard 73, 4., 2300 København S<br><b>Company:</b> Nordic Reward Partners ApS<br><b>Date:</b> 01.10.2021</div>`)[0];
+                popup_d6891e5527d21475170afcd7830816d1.setContent(html_1fcfe068a2cead37a3c34a5b667e09bf);
+            
+        
+
+        marker_a931ce1201fa32edf18bc71fe0cef241.bindPopup(popup_d6891e5527d21475170afcd7830816d1)
+        ;
+
+        
+    
+    
+            ant_path_fe01e323af9d975c780399b35cd0e4eb = L.polyline.antPath(
+              [[55.6321835, 12.5818871], [55.65622639999999, 12.591784]],
+              {"bubblingMouseEvents": true, "color": "black", "dashArray": [10, 20], "dashOffset": null, "delay": 1000, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "hardwareAcceleration": false, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "paused": false, "pulseColor": "#FFFFFF", "reverse": false, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+        ).addTo(map_d2d9aac9885c6533df64d7b346be6edc);
+        
+    
+            var marker_fc880913de3ec79e08df8e321af1c6b5 = L.marker(
+                [55.6614158, 12.62702],
+                {}
+            ).addTo(map_d2d9aac9885c6533df64d7b346be6edc);
+        
+    
+            var icon_c416704701dc014bd1813db4e7dff98f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fc880913de3ec79e08df8e321af1c6b5.setIcon(icon_c416704701dc014bd1813db4e7dff98f);
+        
+    
+        var popup_46684d1cbc4f4aaa83c34276748a2de2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_094a0431f5cbe9eb12f5e6c35ed699b3 = $(`<div id="html_094a0431f5cbe9eb12f5e6c35ed699b3" style="width: 100.0%; height: 100.0%;"><b>From:</b> Øresundsvej 142F, 3. tv, 2300 København S<br><b>Company:</b> Get Lit Holding ApS<br><b>Date:</b> 13.10.2021</div>`)[0];
+                popup_46684d1cbc4f4aaa83c34276748a2de2.setContent(html_094a0431f5cbe9eb12f5e6c35ed699b3);
+            
+        
+
+        marker_fc880913de3ec79e08df8e321af1c6b5.bindPopup(popup_46684d1cbc4f4aaa83c34276748a2de2)
+        ;
+
+        
+    
+    
+            ant_path_5bbb731fa1de51ebbbfe36dc3fba7d33 = L.polyline.antPath(
+              [[55.6614158, 12.62702], [55.65622639999999, 12.591784]],
+              {"bubblingMouseEvents": true, "color": "black", "dashArray": [10, 20], "dashOffset": null, "delay": 1000, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "hardwareAcceleration": false, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "paused": false, "pulseColor": "#FFFFFF", "reverse": false, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+        ).addTo(map_d2d9aac9885c6533df64d7b346be6edc);
+        
+    
+            var marker_0178f3ba48730a8b480f1a8dffdf7380 = L.marker(
+                [55.6621402, 12.5779449],
+                {}
+            ).addTo(map_d2d9aac9885c6533df64d7b346be6edc);
+        
+    
+            var icon_cfcd004b42ad0748312070da1a22d1f0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0178f3ba48730a8b480f1a8dffdf7380.setIcon(icon_cfcd004b42ad0748312070da1a22d1f0);
+        
+    
+        var popup_bee94f9c64537f1a7fca293d26e4d745 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6c12a13ba19efb7c3bc04ab4697d522d = $(`<div id="html_6c12a13ba19efb7c3bc04ab4697d522d" style="width: 100.0%; height: 100.0%;"><b>From:</b> Artillerivej 86, st. th, 2300 København S<br><b>Company:</b> FISCHER & KERRN A/S<br><b>Date:</b> 23.08.2021</div>`)[0];
+                popup_bee94f9c64537f1a7fca293d26e4d745.setContent(html_6c12a13ba19efb7c3bc04ab4697d522d);
+            
+        
+
+        marker_0178f3ba48730a8b480f1a8dffdf7380.bindPopup(popup_bee94f9c64537f1a7fca293d26e4d745)
+        ;
+
+        
+    
+    
+            ant_path_17e16a5b837dac9b55df50a47d8c6054 = L.polyline.antPath(
+              [[55.6621402, 12.5779449], [55.65622639999999, 12.591784]],
+              {"bubblingMouseEvents": true, "color": "black", "dashArray": [10, 20], "dashOffset": null, "delay": 1000, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "hardwareAcceleration": false, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "paused": false, "pulseColor": "#FFFFFF", "reverse": false, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+        ).addTo(map_d2d9aac9885c6533df64d7b346be6edc);
+        
+    
+            var marker_4891f2f82d5ca14772317c2ac6c6a225 = L.marker(
+                [55.6998963, 12.5329415],
+                {}
+            ).addTo(map_d2d9aac9885c6533df64d7b346be6edc);
+        
+    
+            var icon_40be383cae14bf35fb4bddee21414302 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4891f2f82d5ca14772317c2ac6c6a225.setIcon(icon_40be383cae14bf35fb4bddee21414302);
+        
+    
+        var popup_b689f178fc02f97f0d88403c4dc7747f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_77840600d69308a7be1510c84448c374 = $(`<div id="html_77840600d69308a7be1510c84448c374" style="width: 100.0%; height: 100.0%;"><b>From:</b> Hejrevej 28, 1., 2400 København NV<br><b>Company:</b> MONO SOLUTIONS ApS<br><b>Date:</b> 29.11.2021</div>`)[0];
+                popup_b689f178fc02f97f0d88403c4dc7747f.setContent(html_77840600d69308a7be1510c84448c374);
+            
+        
+
+        marker_4891f2f82d5ca14772317c2ac6c6a225.bindPopup(popup_b689f178fc02f97f0d88403c4dc7747f)
+        ;
+
+        
+    
+    
+            ant_path_09934bea1fb5979fa1068cdd8ce3a7fc = L.polyline.antPath(
+              [[55.6998963, 12.5329415], [55.65622639999999, 12.591784]],
+              {"bubblingMouseEvents": true, "color": "black", "dashArray": [10, 20], "dashOffset": null, "delay": 1000, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "hardwareAcceleration": false, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "paused": false, "pulseColor": "#FFFFFF", "reverse": false, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+        ).addTo(map_d2d9aac9885c6533df64d7b346be6edc);
+        
+    
+            var marker_cc05870982a5da34054ac187fba748cb = L.marker(
+                [55.666653, 12.559371],
+                {}
+            ).addTo(map_d2d9aac9885c6533df64d7b346be6edc);
+        
+    
+            var icon_a07579bacad5c8b29e988ef6dc861d78 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_cc05870982a5da34054ac187fba748cb.setIcon(icon_a07579bacad5c8b29e988ef6dc861d78);
+        
+    
+        var popup_84b64b71919afffbeb4a6bc91fbd2623 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_39ca2a5f19cfd7631ff666dd99b343ed = $(`<div id="html_39ca2a5f19cfd7631ff666dd99b343ed" style="width: 100.0%; height: 100.0%;"><b>From:</b> Flæsketorvet 68, 1., 1711 København V, 1711 Flæsketorvet<br><b>Company:</b> Get Lit Denmark ApS<br><b>Date:</b> 29.04.2021</div>`)[0];
+                popup_84b64b71919afffbeb4a6bc91fbd2623.setContent(html_39ca2a5f19cfd7631ff666dd99b343ed);
+            
+        
+
+        marker_cc05870982a5da34054ac187fba748cb.bindPopup(popup_84b64b71919afffbeb4a6bc91fbd2623)
+        ;
+
+        
+    
+    
+            ant_path_12f057a56808d93f1c64354b381fbb0c = L.polyline.antPath(
+              [[55.666653, 12.559371], [55.65622639999999, 12.591784]],
+              {"bubblingMouseEvents": true, "color": "black", "dashArray": [10, 20], "dashOffset": null, "delay": 1000, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "hardwareAcceleration": false, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "paused": false, "pulseColor": "#FFFFFF", "reverse": false, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+        ).addTo(map_d2d9aac9885c6533df64d7b346be6edc);
+        
+    
+            var marker_aad7f91fcc68c9b0ca76f823baccf1a3 = L.marker(
+                [55.6614923, 12.5635868],
+                {}
+            ).addTo(map_d2d9aac9885c6533df64d7b346be6edc);
+        
+    
+            var icon_dbe553ffd2e9e14c676a4e0e8aafed5a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_aad7f91fcc68c9b0ca76f823baccf1a3.setIcon(icon_dbe553ffd2e9e14c676a4e0e8aafed5a);
+        
+    
+        var popup_e1c9e4528d85f6edaf67ae2a916747fd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f8cb6870292bd2ea18da865750888cc9 = $(`<div id="html_f8cb6870292bd2ea18da865750888cc9" style="width: 100.0%; height: 100.0%;"><b>From:</b> Havneholmen 25, 1561 København V, 1561 Fisketorvet<br><b>Company:</b> NU SKIN SCANDINAVIA A/S<br><b>Date:</b> 01.11.2022</div>`)[0];
+                popup_e1c9e4528d85f6edaf67ae2a916747fd.setContent(html_f8cb6870292bd2ea18da865750888cc9);
+            
+        
+
+        marker_aad7f91fcc68c9b0ca76f823baccf1a3.bindPopup(popup_e1c9e4528d85f6edaf67ae2a916747fd)
+        ;
+
+        
+    
+    
+            ant_path_c63641cce0a2cc0974d0b16fbf2be5ff = L.polyline.antPath(
+              [[55.6614923, 12.5635868], [55.65622639999999, 12.591784]],
+              {"bubblingMouseEvents": true, "color": "black", "dashArray": [10, 20], "dashOffset": null, "delay": 1000, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "hardwareAcceleration": false, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "paused": false, "pulseColor": "#FFFFFF", "reverse": false, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+        ).addTo(map_d2d9aac9885c6533df64d7b346be6edc);
+        
+    
+            var marker_8dbc0fb055bc9fa17120987ed825dc2c = L.marker(
+                [55.6614923, 12.5635868],
+                {}
+            ).addTo(map_d2d9aac9885c6533df64d7b346be6edc);
+        
+    
+            var icon_a451d239a1ddbe54675aeca8598daeb6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8dbc0fb055bc9fa17120987ed825dc2c.setIcon(icon_a451d239a1ddbe54675aeca8598daeb6);
+        
+    
+        var popup_d9c23309e71f8ab573f493b4cc386536 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1623202bc7ed1392580d3d784749c11c = $(`<div id="html_1623202bc7ed1392580d3d784749c11c" style="width: 100.0%; height: 100.0%;"><b>From:</b> Havneholmen 25, 1561 København V, 1561 Fisketorvet<br><b>Company:</b> NU SKIN SCANDINAVIA A/S<br><b>Date:</b> 05.10.2022</div>`)[0];
+                popup_d9c23309e71f8ab573f493b4cc386536.setContent(html_1623202bc7ed1392580d3d784749c11c);
+            
+        
+
+        marker_8dbc0fb055bc9fa17120987ed825dc2c.bindPopup(popup_d9c23309e71f8ab573f493b4cc386536)
+        ;
+
+        
+    
+    
+            ant_path_5012e83eb20c5538a086335a8540a236 = L.polyline.antPath(
+              [[55.6614923, 12.5635868], [55.65622639999999, 12.591784]],
+              {"bubblingMouseEvents": true, "color": "black", "dashArray": [10, 20], "dashOffset": null, "delay": 1000, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "hardwareAcceleration": false, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "paused": false, "pulseColor": "#FFFFFF", "reverse": false, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+        ).addTo(map_d2d9aac9885c6533df64d7b346be6edc);
+        
+    
+            var marker_64c87dbd228ff44d7aec6a074dc273dc = L.marker(
+                [55.666653, 12.559371],
+                {}
+            ).addTo(map_d2d9aac9885c6533df64d7b346be6edc);
+        
+    
+            var icon_b3e40719714ad8fe68f5c2f5ab6461fb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_64c87dbd228ff44d7aec6a074dc273dc.setIcon(icon_b3e40719714ad8fe68f5c2f5ab6461fb);
+        
+    
+        var popup_f3e89e986a476d9714d29d05c3b4ac82 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1a78818ea793c1a061504d6a10f0b986 = $(`<div id="html_1a78818ea793c1a061504d6a10f0b986" style="width: 100.0%; height: 100.0%;"><b>From:</b> C/O Soho, Flæsketorvet 68, 1., 1711 København V, 1711 Flæsketorvet<br><b>Company:</b> VISMO ApS<br><b>Date:</b> 02.08.2021</div>`)[0];
+                popup_f3e89e986a476d9714d29d05c3b4ac82.setContent(html_1a78818ea793c1a061504d6a10f0b986);
+            
+        
+
+        marker_64c87dbd228ff44d7aec6a074dc273dc.bindPopup(popup_f3e89e986a476d9714d29d05c3b4ac82)
+        ;
+
+        
+    
+    
+            ant_path_0cc425d13c9910115a64e53179b4ec82 = L.polyline.antPath(
+              [[55.666653, 12.559371], [55.6560928, 12.5918041]],
+              {"bubblingMouseEvents": true, "color": "black", "dashArray": [10, 20], "dashOffset": null, "delay": 1000, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "hardwareAcceleration": false, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "paused": false, "pulseColor": "#FFFFFF", "reverse": false, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+        ).addTo(map_d2d9aac9885c6533df64d7b346be6edc);
+        
+    
+            var marker_a2f90985d2178730b6d775ba18edc339 = L.marker(
+                [55.7716774, 12.0909522],
+                {}
+            ).addTo(map_d2d9aac9885c6533df64d7b346be6edc);
+        
+    
+            var icon_91f436abcc1e2a5becb71e8e9bee39a3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a2f90985d2178730b6d775ba18edc339.setIcon(icon_91f436abcc1e2a5becb71e8e9bee39a3);
+        
+    
+        var popup_e236a16a6de17535d05e12a249ec5ce3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3c7c845e910a2ac991f8fdafd2e3482e = $(`<div id="html_3c7c845e910a2ac991f8fdafd2e3482e" style="width: 100.0%; height: 100.0%;"><b>From:</b> Fjordager 21, 4040 Jyllinge<br><b>Company:</b> Working Minds ApS<br><b>Date:</b> 21.10.2022</div>`)[0];
+                popup_e236a16a6de17535d05e12a249ec5ce3.setContent(html_3c7c845e910a2ac991f8fdafd2e3482e);
+            
+        
+
+        marker_a2f90985d2178730b6d775ba18edc339.bindPopup(popup_e236a16a6de17535d05e12a249ec5ce3)
+        ;
+
+        
+    
+    
+            ant_path_30db41155f6c27820b01fbcae2bed71f = L.polyline.antPath(
+              [[55.7716774, 12.0909522], [55.65622639999999, 12.591784]],
+              {"bubblingMouseEvents": true, "color": "black", "dashArray": [10, 20], "dashOffset": null, "delay": 1000, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "hardwareAcceleration": false, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "paused": false, "pulseColor": "#FFFFFF", "reverse": false, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+        ).addTo(map_d2d9aac9885c6533df64d7b346be6edc);
+        
+    
+            var marker_ca67d2dc57eb40abad5d058bfb0d3f48 = L.marker(
+                [55.61915070000001, 12.566714],
+                {}
+            ).addTo(map_d2d9aac9885c6533df64d7b346be6edc);
+        
+    
+            var icon_e8ef8e2b276b171635c7716127be8af1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ca67d2dc57eb40abad5d058bfb0d3f48.setIcon(icon_e8ef8e2b276b171635c7716127be8af1);
+        
+    
+        var popup_260c1dc3d98b68e32ba2ff067320f0ea = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5b84dc5e725a72edf69dbb0497b19299 = $(`<div id="html_5b84dc5e725a72edf69dbb0497b19299" style="width: 100.0%; height: 100.0%;"><b>From:</b> Else Alfelts Vej 62B, 4. tv, 2300 København S<br><b>Company:</b> Payne Search ApS<br><b>Date:</b> 28.05.2021</div>`)[0];
+                popup_260c1dc3d98b68e32ba2ff067320f0ea.setContent(html_5b84dc5e725a72edf69dbb0497b19299);
+            
+        
+
+        marker_ca67d2dc57eb40abad5d058bfb0d3f48.bindPopup(popup_260c1dc3d98b68e32ba2ff067320f0ea)
+        ;
+
+        
+    
+    
+            ant_path_d3a709db8ea1029cb26fff5b22015c2c = L.polyline.antPath(
+              [[55.61915070000001, 12.566714], [55.65622639999999, 12.591784]],
+              {"bubblingMouseEvents": true, "color": "black", "dashArray": [10, 20], "dashOffset": null, "delay": 1000, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "hardwareAcceleration": false, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "paused": false, "pulseColor": "#FFFFFF", "reverse": false, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+        ).addTo(map_d2d9aac9885c6533df64d7b346be6edc);
+        
+    
+            var marker_8483e2ea080db322223e29cc727b0d8e = L.marker(
+                [55.7003029, 12.5959892],
+                {}
+            ).addTo(map_d2d9aac9885c6533df64d7b346be6edc);
+        
+    
+            var icon_c0d910dc3aced037092106c67195d9a0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8483e2ea080db322223e29cc727b0d8e.setIcon(icon_c0d910dc3aced037092106c67195d9a0);
+        
+    
+        var popup_f9855d482f4f4b08682ddb711d000bb2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9df2ba63801f0360419af3eb998f5e28 = $(`<div id="html_9df2ba63801f0360419af3eb998f5e28" style="width: 100.0%; height: 100.0%;"><b>From:</b> C/O Health Tech Hub Copenhagen, Dampfærgevej 28, 2100 København Ø<br><b>Company:</b> Tubus Technology ApS<br><b>Date:</b> 04.10.2021</div>`)[0];
+                popup_f9855d482f4f4b08682ddb711d000bb2.setContent(html_9df2ba63801f0360419af3eb998f5e28);
+            
+        
+
+        marker_8483e2ea080db322223e29cc727b0d8e.bindPopup(popup_f9855d482f4f4b08682ddb711d000bb2)
+        ;
+
+        
+    
+    
+            ant_path_cb17366c0862f0853636a948db5a7dbf = L.polyline.antPath(
+              [[55.7003029, 12.5959892], [55.65622639999999, 12.591784]],
+              {"bubblingMouseEvents": true, "color": "black", "dashArray": [10, 20], "dashOffset": null, "delay": 1000, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "hardwareAcceleration": false, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "paused": false, "pulseColor": "#FFFFFF", "reverse": false, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+        ).addTo(map_d2d9aac9885c6533df64d7b346be6edc);
+        
+    
+            var marker_c71a44c55e672a7bf37c636f054d9b85 = L.marker(
+                [55.72764799999999, 12.5761286],
+                {}
+            ).addTo(map_d2d9aac9885c6533df64d7b346be6edc);
+        
+    
+            var icon_fb7f8f82a2fab70786e3c2f82d39a8df = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c71a44c55e672a7bf37c636f054d9b85.setIcon(icon_fb7f8f82a2fab70786e3c2f82d39a8df);
+        
+    
+        var popup_cbd9573e22afe3f77bca50b075db8677 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9618c31c406d66bfe1cec7cbceff3d2c = $(`<div id="html_9618c31c406d66bfe1cec7cbceff3d2c" style="width: 100.0%; height: 100.0%;"><b>From:</b> Strandvejen 64D, 3., 2900 Hellerup<br><b>Company:</b> Bancore A/S<br><b>Date:</b> 22.03.2021</div>`)[0];
+                popup_cbd9573e22afe3f77bca50b075db8677.setContent(html_9618c31c406d66bfe1cec7cbceff3d2c);
+            
+        
+
+        marker_c71a44c55e672a7bf37c636f054d9b85.bindPopup(popup_cbd9573e22afe3f77bca50b075db8677)
+        ;
+
+        
+    
+    
+            ant_path_2ca92286cb241230028dbee90b422e87 = L.polyline.antPath(
+              [[55.72764799999999, 12.5761286], [55.65622639999999, 12.591784]],
+              {"bubblingMouseEvents": true, "color": "black", "dashArray": [10, 20], "dashOffset": null, "delay": 1000, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "hardwareAcceleration": false, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "paused": false, "pulseColor": "#FFFFFF", "reverse": false, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+        ).addTo(map_d2d9aac9885c6533df64d7b346be6edc);
+        
+    
+            var marker_1ba60157add826e75c87f52f400baffc = L.marker(
+                [55.6622729, 12.5862436],
+                {}
+            ).addTo(map_d2d9aac9885c6533df64d7b346be6edc);
+        
+    
+            var icon_d433f7c66f6e5838355e4b79b5e544ac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1ba60157add826e75c87f52f400baffc.setIcon(icon_d433f7c66f6e5838355e4b79b5e544ac);
+        
+    
+        var popup_b05453c872d317ebeae82c74c248ec0c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d606bfade098493540d6a1060f265756 = $(`<div id="html_d606bfade098493540d6a1060f265756" style="width: 100.0%; height: 100.0%;"><b>From:</b> C/O Bygning 4, 4. sal, lokale A4.09, Njalsgade 76, 2300 København S<br><b>Company:</b> BLUEFRAGMENTS ApS<br><b>Date:</b> 20.04.2021</div>`)[0];
+                popup_b05453c872d317ebeae82c74c248ec0c.setContent(html_d606bfade098493540d6a1060f265756);
+            
+        
+
+        marker_1ba60157add826e75c87f52f400baffc.bindPopup(popup_b05453c872d317ebeae82c74c248ec0c)
+        ;
+
+        
+    
+    
+            ant_path_3cb2179292319fa524e7b5c62fe27067 = L.polyline.antPath(
+              [[55.6622729, 12.5862436], [55.65622639999999, 12.591784]],
+              {"bubblingMouseEvents": true, "color": "black", "dashArray": [10, 20], "dashOffset": null, "delay": 1000, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "hardwareAcceleration": false, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "paused": false, "pulseColor": "#FFFFFF", "reverse": false, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+        ).addTo(map_d2d9aac9885c6533df64d7b346be6edc);
+        
+    
+            var marker_f47fa2d70cbaedcbed416ca3597571c9 = L.marker(
+                [55.6721083, 12.5785525],
+                {}
+            ).addTo(map_d2d9aac9885c6533df64d7b346be6edc);
+        
+    
+            var icon_cb1ca0c1f49c450299898439cf4a81ee = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f47fa2d70cbaedcbed416ca3597571c9.setIcon(icon_cb1ca0c1f49c450299898439cf4a81ee);
+        
+    
+        var popup_2945cb9c1f9e56b88102a7827d9a463b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2ffcfab53c17665d94d27fd5dc6e97d7 = $(`<div id="html_2ffcfab53c17665d94d27fd5dc6e97d7" style="width: 100.0%; height: 100.0%;"><b>From:</b> Bryghuspladsen 8, 1473 København K, 1473 Bryghusgade<br><b>Company:</b> EMMXAN GROUP IVS<br><b>Date:</b> 27.07.2021</div>`)[0];
+                popup_2945cb9c1f9e56b88102a7827d9a463b.setContent(html_2ffcfab53c17665d94d27fd5dc6e97d7);
+            
+        
+
+        marker_f47fa2d70cbaedcbed416ca3597571c9.bindPopup(popup_2945cb9c1f9e56b88102a7827d9a463b)
+        ;
+
+        
+    
+    
+            ant_path_57d98343ece0cfa34cbb0d47856dc5fe = L.polyline.antPath(
+              [[55.6721083, 12.5785525], [55.65622639999999, 12.591784]],
+              {"bubblingMouseEvents": true, "color": "black", "dashArray": [10, 20], "dashOffset": null, "delay": 1000, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "hardwareAcceleration": false, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "paused": false, "pulseColor": "#FFFFFF", "reverse": false, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+        ).addTo(map_d2d9aac9885c6533df64d7b346be6edc);
+        
+    
+            var marker_7f7c96954a9c033dfde9f125c633c419 = L.marker(
+                [55.6603607, 12.591543],
+                {}
+            ).addTo(map_d2d9aac9885c6533df64d7b346be6edc);
+        
+    
+            var icon_7d09d8edacc000ec2995a9ba00929ccd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7f7c96954a9c033dfde9f125c633c419.setIcon(icon_7d09d8edacc000ec2995a9ba00929ccd);
+        
+    
+        var popup_20b465a9d5a4aaffe5ef9c4dae40485a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f83b5866a93c94470c2d1498a1381c7e = $(`<div id="html_f83b5866a93c94470c2d1498a1381c7e" style="width: 100.0%; height: 100.0%;"><b>From:</b> Rued Langgaards Vej 8, 4., 2300 København S<br><b>Company:</b> Appstract Consulting ApS<br><b>Date:</b> 29.04.2021</div>`)[0];
+                popup_20b465a9d5a4aaffe5ef9c4dae40485a.setContent(html_f83b5866a93c94470c2d1498a1381c7e);
+            
+        
+
+        marker_7f7c96954a9c033dfde9f125c633c419.bindPopup(popup_20b465a9d5a4aaffe5ef9c4dae40485a)
+        ;
+
+        
+    
+    
+            ant_path_d9ab5270c426e5fe468567f5bb1de7a9 = L.polyline.antPath(
+              [[55.6603607, 12.591543], [55.6560928, 12.5918041]],
+              {"bubblingMouseEvents": true, "color": "black", "dashArray": [10, 20], "dashOffset": null, "delay": 1000, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "hardwareAcceleration": false, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "paused": false, "pulseColor": "#FFFFFF", "reverse": false, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+        ).addTo(map_d2d9aac9885c6533df64d7b346be6edc);
+        
+    
+            var marker_03c74a1eb9ffde444a85b20059d4d63d = L.marker(
+                [55.6208179, 12.5738386],
+                {}
+            ).addTo(map_d2d9aac9885c6533df64d7b346be6edc);
+        
+    
+            var icon_bedf2340fabf9c096caca5e9f30dacaa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_03c74a1eb9ffde444a85b20059d4d63d.setIcon(icon_bedf2340fabf9c096caca5e9f30dacaa);
+        
+    
+        var popup_406767c94e804b7c0ad04c7254dee07a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e5758014f13e653c98e3a4c2f234595f = $(`<div id="html_e5758014f13e653c98e3a4c2f234595f" style="width: 100.0%; height: 100.0%;"><b>From:</b> C/O Tobias Errboe, Robert Jacobsens Vej 39, 1. th, 2300 København S<br><b>Company:</b> Liguria ApS<br><b>Date:</b> 02.06.2022</div>`)[0];
+                popup_406767c94e804b7c0ad04c7254dee07a.setContent(html_e5758014f13e653c98e3a4c2f234595f);
+            
+        
+
+        marker_03c74a1eb9ffde444a85b20059d4d63d.bindPopup(popup_406767c94e804b7c0ad04c7254dee07a)
+        ;
+
+        
+    
+    
+            ant_path_a612442dd660e63098aa000d70a0b977 = L.polyline.antPath(
+              [[55.6208179, 12.5738386], [55.65622639999999, 12.591784]],
+              {"bubblingMouseEvents": true, "color": "black", "dashArray": [10, 20], "dashOffset": null, "delay": 1000, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "hardwareAcceleration": false, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "paused": false, "pulseColor": "#FFFFFF", "reverse": false, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+        ).addTo(map_d2d9aac9885c6533df64d7b346be6edc);
+        
+    
+            var marker_4458c00e99b42f55fa9c64b31bb23118 = L.marker(
+                [55.6562264, 12.591784],
+                {}
+            ).addTo(map_d2d9aac9885c6533df64d7b346be6edc);
+        
+    
+            var icon_4b3b47f8a630d66ea6a183f3395b80d8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_4458c00e99b42f55fa9c64b31bb23118.setIcon(icon_4b3b47f8a630d66ea6a183f3395b80d8);
+        
+    
+        var popup_a6a5e33e78441a94db2927bd771ff028 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_17d89d41b590d6f65487bd40899ed691 = $(`<div id="html_17d89d41b590d6f65487bd40899ed691" style="width: 100.0%; height: 100.0%;"><b>Augusthus</b></div>`)[0];
+                popup_a6a5e33e78441a94db2927bd771ff028.setContent(html_17d89d41b590d6f65487bd40899ed691);
+            
+        
+
+        marker_4458c00e99b42f55fa9c64b31bb23118.bindPopup(popup_a6a5e33e78441a94db2927bd771ff028)
+        ;
+
+        
+    
+</script>
+</html>
